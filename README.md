@@ -3,6 +3,11 @@
 pada path ./server terdapat backend dari aplikasi
 pada path ./client terdapat frontend dari aplikasi
 
+## Requirements
+- Nodejs latest
+- yarn or npm
+
+## Setup
 - Pertama jalankan ```yarn init:install``` atau ```npm init:install```
 - Pada dalam ./server buatlah sebuah .env dengan isi yang sama dengan .env.example
     - PORT = port backend yang akan dijalankan
@@ -25,6 +30,7 @@ Untuk production  mode
 
 ## Docker
 ```docker run -p 3000:3000 kaye5/socket-io-chat-room ```
+
 **OPTIONAL** Env : 
 - ```REACT_APP_SERVER_ENDPOINT``` server endpoint 
 - ```PORT``` server running port
