@@ -24,9 +24,9 @@ Untuk production  mode
 - Setelah di click maka akan memasuki halaman chat room
 
 ## Docker
-```docker run kaye5/socket-io-chat-room -p 3000:3000```
-Env : 
-- ```REACT_APP_SERVER_ENDPOINT``` server endpoint
+```docker run -p 3000:3000 kaye5/socket-io-chat-room ```
+**OPTIONAL** Env : 
+- ```REACT_APP_SERVER_ENDPOINT``` server endpoint 
 - ```PORT``` server running port
 
 
