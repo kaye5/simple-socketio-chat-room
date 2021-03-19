@@ -3,10 +3,10 @@
 pada path ./server terdapat backend dari aplikasi
 pada path ./client terdapat frontend dari aplikasi
 
-- Pertama jalankan ```yarn``` atau ```npm install```
+- Pertama jalankan ```yarn init:install``` atau ```npm init:install```
 - Pada dalam ./server buatlah sebuah .env dengan isi yang sama dengan .env.example
     - PORT = port backend yang akan dijalankan
-- Pada dalam ./client buat lah sebuah .env.development.local dengan isi yang sama dengan .env
+- Pada dalam ./client buat lah sebuah untuk development .env.development.local dan .env.production.local untuk production. dengan isi yang sama dengan .env
     - REACT_APP_SERVER_ENDPOINT = endpoint dari backend
 
 Untuk menjalankan development mode
@@ -22,3 +22,24 @@ Untuk production  mode
 - Pada awal masuk maka akan di minta memasukan username 
 - Kemudian pada bagian awal halaman terdapat list dari chat room yang dapat di click
 - Setelah di click maka akan memasuki halaman chat room
+
+## Docker
+```docker run kaye5/socket-io-chat-room -p 3000:3000```
+Env : 
+- ```REACT_APP_SERVER_ENDPOINT``` server endpoint
+- ```PORT``` server running port
+
+
+## Dependencies
+Backend : 
+- express
+- cors
+- dotenv
+- morgan
+- socket io
+- uuid
+
+Frontend : 
+- React
+- Axios
+- Socket io client
