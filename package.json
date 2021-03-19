@@ -19,8 +19,12 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "build" : "cd client && npm build",
-    "start:client" : "cd client && npm start",
-    "start:server" : "cd server && npm start"
+    "init:install" : "npm run-script init:server && npm run-script init:client",
+    "init:server":"cd server && npm install",
+    "init:client" : "cd client && npm install",
+    "build" : "cd client && npm run-script build",
+    "start:client" : "cd client && npm run-script start",
+    "start:server" : "cd server && npm run-script start",
+    "production" : "cd server && node server.js"
   }
 }
