@@ -19,7 +19,8 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "start:client" : "cd client && yarn start",
-    "start:server" : "cd server && yarn start"
+    "build" : "cd client && npm build",
+    "start:client" : "cd client && npm start",
+    "start:server" : "cd server && npm start"
   }
 }
